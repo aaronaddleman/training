@@ -49,7 +49,7 @@ provider "aws" {
 }
 
 # resources
-resource "aws_instance" "web" {
+resource "aws_instance" "web" 
   count         = "${var.web_count}"
   ami           = "${var.aws_ami}"
   instance_type = "t2.micro"
