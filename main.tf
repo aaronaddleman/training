@@ -38,7 +38,7 @@ variable "aws_ami" {
 }
 
 variable "web_count" {
-  default = "2"
+  default = "1"
 }
 
 # provider
