@@ -38,7 +38,7 @@ variable "aws_ami" {
 }
 
 variable "web_count" {
-  default = "3"
+  default = "1"
 }
 
 # provider
@@ -64,7 +64,7 @@ resource "aws_instance" "web" {
     Identity = "autodesk-ant"
     Company  = "autodesk"
     Animal   = "ant"
-    Name     = "web ${count.index+1}/${var.web_count} instances"
+    Name     = "web ${count.index+1}/${var.web_count}"
   }
 }
 
